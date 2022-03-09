@@ -229,7 +229,7 @@ for i in \
 "MaxAuthTries 4" \
 "IgnoreRhosts yes" \
 "HostbasedAuthentication no" \
-"PermitRootLogin no" \
+"PermitRootLogin yes" \
 "PermitEmptyPasswords no" \
 "PermitUserEnvironment no" \
 "ClientAliveInterval 300" \
