@@ -1,5 +1,5 @@
 #!/bin/bash
- 
+
 : '
 #SYNOPSIS
     Quick win script for remediation of RHEL 7 baseline misconfigurations.
