@@ -1,8 +1,6 @@
 #!/bin/bash
-
 BLUE='\033[1;35m'
 RED='\033[1;31m'
-
 echo
 echo -e "${BLUE}Installing BigFix Client"
 mkdir /etc/opt/BESClient/
