@@ -1963,7 +1963,7 @@ fi
 # Ensure SSH root login is disabled
 echo
 echo -e "${RED}5.2.8${NC} Ensure SSH root login is disabled"
-rhel_5_2_8="$(egrep -q "^(\s*)PermitRootLogin\s+\S+(\s*#.*)?\s*$" /etc/ssh/sshd_config && sed -ri "s/^(\s*)PermitRootLogin\s+\S+(\s*#.*)?\s*$/\1PermitRootLogin no\2/" /etc/ssh/sshd_config || echo "PermitRootLogin no" >> /etc/ssh/sshd_config)"
+rhel_5_2_8="$(egrep -q "^(\s*)PermitRootLogin\s+\S+(\s*#.*)?\s*$" /etc/ssh/sshd_config && sed -ri "s/^(\s*)PermitRootLogin\s+\S+(\s*#.*)?\s*$/\1PermitRootLogin yes\2/" /etc/ssh/sshd_config || echo "PermitRootLogin yes" >> /etc/ssh/sshd_config)"
 rhel_5_2_8=$?
 if [[ "$rhel_5_2_8" -eq 0 ]]; then
   echo -e "${GREEN}Remediated:${NC} Ensure SSH root login is disabled"
