@@ -6,12 +6,12 @@ RED='\033[1;31m'
 echo
 echo -e "${BLUE}Installing BigFix Client"
 mkdir /etc/opt/BESClient/
-rpm -ivh 'https://software.bigfix.com/download/bes/100/BESAgent-10.0.5.50-rhe6.x86_64.rpm'
-cd /etc/opt/BESClient/
+rpm -ivh https://software.bigfix.com/download/bes/100/BESAgent-10.0.5.50-rhe6.x86_64.rpm
+cd /etc/opt/BESClient/ || exit
 curl 'http://bigfix.dfc.gov:52311/masthead/masthead.afxm' -o actionsite.afxm
-cd /etc/init.d/
+cd /etc/init.d/ || exit
 ./besclient start
-cd /etc/systemd/system 
+cd /etc/systemd/system || exit 
 systemctl enable besclient
 
 echo
