@@ -31,4 +31,4 @@ systemctl status besclient
 
 echo
 echo -e "${RED}Restarting System in 1 minutes"
-sudo shutdown -r 10
+shutdown -r 1
