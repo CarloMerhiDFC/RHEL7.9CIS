@@ -11,7 +11,7 @@ cd /etc/opt/BESClient/
 curl 'http://bigfix.dfc.gov:52311/masthead/masthead.afxm' -o actionsite.afxm
 cd /etc/init.d/
 ./besclient start
-cd /etc/systemd/system 
+cd /etc/systemd/system
 systemctl enable besclient
 
 echo
