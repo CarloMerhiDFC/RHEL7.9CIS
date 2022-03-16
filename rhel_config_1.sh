@@ -1,9 +1,4 @@
 #!/bin/bash
-: '
-#SYNOPSIS
-  Script for automating Linux Server builds
-.DESCRIPTION
-  Run this script to get several installed and configured.
 
 BLUE='\033[1;35m'
 RED='\033[1;31m'
