@@ -210,12 +210,13 @@ cat > /etc/issue.net << 'EOF'
 | traveling to or from this information system, and any communications    |
 | or data transiting, stored on, or traveling to or from this information | 
 | system may be disclosed or used for any lawful government purpose.      |
-| Unauthorized use should be reported to the DFC CISO at ciso@dfc.gov.    |
+| Unauthorized use should be reported to the VRS CISO at                  |
+| ciso@varetire.org.                                                      |
 \-------------------------------------------------------------------------/
 EOF
 cp -p /etc/motd /etc/motd_$TIME.bak
 cat > /etc/motd << 'EOF'
-DFC AUTHORIZED USE ONLY
+VRS AUTHORIZED USE ONLY
 EOF
 rm -rf /etc/issue
 ln -s /etc/issue.net /etc/issue
